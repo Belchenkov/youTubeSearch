@@ -11,7 +11,26 @@
 <div id="container">
     <header>
         <h1>You Tube <span>Search API</span></h1>
+        <p>Найти видео на You Tube</p>
     </header>
+
+    <section>
+        <form id="search-form" name="search-form" onsubmit="return search()">
+            <div class="fieldContainer">
+                <input type="search" id="jquery" class="search-field" placeholder="Найти видео ..." />
+                <input type="submit" name="search-btn" id="search-btn" value="" />
+            </div>
+        </form>
+
+        <ul id="results">
+            <li></li>
+        </ul>
+        <div id="buttons"></div>
+    </section>
+
+    <footer>
+        <p>Copyright &copy; 2017, Все права защищены</p>
+    </footer>
 </div>
 
 <script src="js/jquery.min.js"></script>
